@@ -12,7 +12,10 @@
 
 * [ ] 도메인 모델 구축
 
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/e0a5c8b4-0bc6-41d2-9c06-5bff05550d44">
+
 * [ ] 기능별 유스케이스 정리
+
 
 * [ ] 유스케이스별 협력순서 정리
 
