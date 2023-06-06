@@ -14,8 +14,31 @@
 
 <img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/e0a5c8b4-0bc6-41d2-9c06-5bff05550d44">
 
+* [ ] 유스케이스 그림
+
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/59e83cce-4b98-483f-912f-4fc7e8cbcfb2">
+
 * [ ] 기능별 유스케이스 정리
 
+1. 할 일 목록 등록
+
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/df02ad68-a0ff-49ac-890f-ed53ab58ff29">
+
+2. 할 일 목록 조회
+
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/ea778d3b-4d41-4ff1-8744-e8d5d2c5b404">
+
+3. 할 일 목록 삭제
+
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/a791e37e-db8e-471a-bdb2-e2cb31d201d6">
+
+4. 할 일 목록 상태 변경
+
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/f866105f-24e7-48c9-9ee9-ccc9b7ff335a">
+
+5. 할 일 목록 수정
+
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/ddbcfa0b-e8c0-4d3c-a46f-0b9ddeb9f87a">
 
 * [ ] 유스케이스별 협력순서 정리
 
