@@ -40,16 +40,39 @@
 
 <img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/ddbcfa0b-e8c0-4d3c-a46f-0b9ddeb9f87a" width="400" height="">
 
-* [ ] 유스케이스별 협력순서 정리
+### 유스케이스별 협력순서 정리
 
-* [ ] 도메인 협력관계 정의
+- 도메인 모델이 "할 일"객체 하나밖에 없음으로 본 객체에서 모든 협력을 처리한다.
 
-* [ ] 클래스 다이어그램
+### 도메인 협력관계 정의
 
-* [ ] 객체 다이어그램
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/eacf85be-e747-4bf1-8300-ac0e31578566">
 
-* [ ] api 설계
+### 클래스 다이어그램
 
-* [ ] erd 설계
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/fdf757c1-ff08-45ab-9008-2ddf94829c41">
 
-* [ ] 전체 구조 설계
+### 객체 다이어그램
+
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/18f57a4f-0bfe-48a7-8717-eafa9b7d7101">
+
+### api 설계
+
+- 등록 : POST, /
+- 조회 : GET, /
+- 아이디 조회 : GET, /{id}
+- 수정 : PATCH, /{id}
+- 삭제 : DELETE, /
+- 아이디 삭제 : DELETE, /{id}
+
+### erd 설계
+
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/41a52789-b080-4829-ad25-5ca6df56100a">
+
+### 전체 구조 설계
+
+1. 할 일 목록 등록
+2. 할 일 목록 조회
+3. 할 일 목록 삭제
+4. 할 일 목록 상태 변경
+5. 할 일 목록 수정
