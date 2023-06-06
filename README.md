@@ -69,7 +69,7 @@
 
 <img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/41a52789-b080-4829-ad25-5ca6df56100a">
 
-### 전체 구조 설계
+### 기능별 flow
 
 1. 할 일 목록 등록
 2. 할 일 목록 조회
