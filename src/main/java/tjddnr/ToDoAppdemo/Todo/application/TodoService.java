@@ -52,4 +52,12 @@ public class TodoService {
 
         return todoMapper.todoToTodoDto(todoRepository.save(findTodoV1));
     }
+
+    public void deleteTodoAll() {
+        todoRepository.deleteAll();
+    }
+
+    public void deleteTodoById(long id) {
+        todoRepository.deleteById(id);
+    }
 }
