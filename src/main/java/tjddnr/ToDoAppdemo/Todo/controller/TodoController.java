@@ -3,6 +3,7 @@ package tjddnr.ToDoAppdemo.Todo.controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,8 +12,8 @@ import tjddnr.ToDoAppdemo.Todo.application.TodoService;
 import tjddnr.ToDoAppdemo.Todo.controller.dto.TodoDto;
 import tjddnr.ToDoAppdemo.Todo.controller.dto.TodoPostDto;
 import tjddnr.ToDoAppdemo.Todo.controller.mapper.TodoMapper;
-import tjddnr.ToDoAppdemo.Todo.domain.TodoV1;
 
+import tjddnr.ToDoAppdemo.Todo.domain.TodoV1;
 import java.util.List;
 
 @RestController
@@ -31,7 +32,6 @@ public class TodoController {
         TodoDto todoDto = todoService.createTodo(todoPostDto);
         return new ResponseEntity<>(todoDto, HttpStatus.OK);
     }
-
     @GetMapping
     public ResponseEntity getTodoLists() {
         List<TodoV1> todoV1s = todoService.findTodoLists();
