@@ -76,6 +76,10 @@
 <img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/130d7d3f-e99a-4e12-a52c-f801afff4ba9">
 
 2. 할 일 목록 조회
+
+- 전체 조회
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/6c0c4694-e4b6-4bbe-bb36-bcc8ef2038a9">
+
 3. 할 일 목록 삭제
 4. 할 일 목록 상태 변경
 5. 할 일 목록 수정
