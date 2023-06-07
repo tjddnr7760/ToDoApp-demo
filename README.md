@@ -78,6 +78,7 @@
 2. 할 일 목록 조회
 
 - 전체 조회
+
 <img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/6c0c4694-e4b6-4bbe-bb36-bcc8ef2038a9">
 
 3. 할 일 목록 삭제
