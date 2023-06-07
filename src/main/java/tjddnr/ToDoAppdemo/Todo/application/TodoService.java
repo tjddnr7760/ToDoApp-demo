@@ -2,6 +2,7 @@ package tjddnr.ToDoAppdemo.Todo.application;
 
 import org.springframework.stereotype.Service;
 import tjddnr.ToDoAppdemo.Todo.controller.dto.TodoDto;
+import tjddnr.ToDoAppdemo.Todo.controller.dto.TodoPatchDto;
 import tjddnr.ToDoAppdemo.Todo.controller.dto.TodoPostDto;
 import tjddnr.ToDoAppdemo.Todo.controller.mapper.TodoMapper;
 import tjddnr.ToDoAppdemo.Todo.domain.TodoV1;
@@ -40,5 +41,16 @@ public class TodoService {
         TodoDto todoDto = todoMapper.todoToTodoDto(findTodoV1);
 
         return todoDto;
+    }
+
+    public TodoDto updateTodoList(TodoPatchDto todoPatchDto) {
+        Optional<TodoV1> optionalTodoV1 = todoRepository.findById(todoPatchDto.getId());
+        TodoV1 findTodoV1 = optionalTodoV1.orElseThrow(() ->
+                new RuntimeException());
+        findTodoV1.setTodoOrder(todoPatchDto.getTodoOrder());
+        findTodoV1.setCompleted(todoPatchDto.isCompleted());
+        findTodoV1.setTitle(todoPatchDto.getTitle());
+
+        return todoMapper.todoToTodoDto(todoRepository.save(findTodoV1));
     }
 }

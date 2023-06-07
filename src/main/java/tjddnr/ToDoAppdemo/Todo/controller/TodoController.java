@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import tjddnr.ToDoAppdemo.Todo.application.TodoService;
 import tjddnr.ToDoAppdemo.Todo.controller.dto.TodoDto;
+import tjddnr.ToDoAppdemo.Todo.controller.dto.TodoPatchDto;
 import tjddnr.ToDoAppdemo.Todo.controller.dto.TodoPostDto;
 import tjddnr.ToDoAppdemo.Todo.controller.mapper.TodoMapper;
 
@@ -44,6 +45,15 @@ public class TodoController {
     @GetMapping("/{id}")
     public ResponseEntity getTodoList(@PathVariable("id") long id) {
         TodoDto todoDto = todoService.findTodoList(id);
+
+        return new ResponseEntity(todoDto, HttpStatus.OK);
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity patchTodoList(@PathVariable("id") long id,
+                                        @RequestBody TodoPatchDto todoPatchDto) {
+        todoPatchDto.setId(id);
+        TodoDto todoDto = todoService.updateTodoList(todoPatchDto);
 
         return new ResponseEntity(todoDto, HttpStatus.OK);
     }
