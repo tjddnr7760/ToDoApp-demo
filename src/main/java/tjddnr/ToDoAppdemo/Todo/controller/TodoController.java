@@ -13,9 +13,11 @@ import tjddnr.ToDoAppdemo.Todo.domain.TodoV1;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @Validated
 public class TodoController {
+
     private TodoService todoService;
     private TodoMapper todoMapper;
 
