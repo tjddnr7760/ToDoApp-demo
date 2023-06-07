@@ -87,7 +87,13 @@
 
 3. 할 일 목록 삭제
 
+- 아이디 삭제
 
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/0ca68f16-449e-44ec-869b-32106a4512dc">
+
+- 전체 삭제
+
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/7d6486d1-6307-422b-a764-bedd7cd8bb2b">
 
 4. 할 일 목록 상태 변경
 5. 할 일 목록 수정
