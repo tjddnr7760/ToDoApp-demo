@@ -98,4 +98,4 @@
 4. 할 일 목록 상태 변경
 5. 할 일 목록 수정
 
-<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/e56fca8c-ce18-4f59-824d-da6f222163b0">
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/7a06dd2f-40a3-47fb-a1eb-91368962ac5d">
