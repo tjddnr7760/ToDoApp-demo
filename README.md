@@ -79,7 +79,11 @@
 
 - 전체 조회
 
-<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/6c0c4694-e4b6-4bbe-bb36-bcc8ef2038a9">
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/be0d5241-45de-433d-9128-e12ef16b737d">
+
+- 아이디 조회
+
+<img src = "https://github.com/tjddnr7760/ToDoApp-demo/assets/42529087/be8245b4-2277-490f-b363-3a1021f20cd6">
 
 3. 할 일 목록 삭제
 4. 할 일 목록 상태 변경
