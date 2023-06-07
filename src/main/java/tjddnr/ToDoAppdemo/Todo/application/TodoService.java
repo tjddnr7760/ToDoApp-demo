@@ -27,16 +27,18 @@ public class TodoService {
         return todoMapper.todoToTodoDto(todo);
     }
 
-    public List<TodoV1> findTodoLists() {
+    public List<TodoDto> findTodoLists() {
         List<TodoV1> todoV1s = todoRepository.findAll();
-        return todoV1s;
+        List<TodoDto> todoDtos = todoMapper.todoV1sToTodoDtos(todoV1s);
+        return todoDtos;
     }
 
-    public TodoV1 findTodoList(long id) {
+    public TodoDto findTodoList(long id) {
         Optional<TodoV1> optionalTodoV1 = todoRepository.findById(id);
         TodoV1 findTodoV1 = optionalTodoV1.orElseThrow(() ->
                 new RuntimeException());
+        TodoDto todoDto = todoMapper.todoToTodoDto(findTodoV1);
 
-        return findTodoV1;
+        return todoDto;
     }
 }

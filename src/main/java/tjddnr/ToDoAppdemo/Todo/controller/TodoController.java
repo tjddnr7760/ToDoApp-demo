@@ -36,16 +36,14 @@ public class TodoController {
     }
     @GetMapping
     public ResponseEntity getTodoLists() {
-        List<TodoV1> todoV1s = todoService.findTodoLists();
-        List<TodoDto> todoDtos = todoMapper.todoV1sToTodoDtos(todoV1s);
+        List<TodoDto> todoDtos = todoService.findTodoLists();
 
         return new ResponseEntity(todoDtos, HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity getTodoList(@PathVariable("id") long id) {
-        TodoV1 todoV1 = todoService.findTodoList(id);
-        TodoDto todoDto = todoMapper.todoToTodoDto(todoV1);
+        TodoDto todoDto = todoService.findTodoList(id);
 
         return new ResponseEntity(todoDto, HttpStatus.OK);
     }
