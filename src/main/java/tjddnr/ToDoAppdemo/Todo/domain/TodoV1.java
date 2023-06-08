@@ -12,6 +12,7 @@ import javax.persistence.*;
 @Setter
 @Entity
 public class TodoV1 implements Todo {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -25,6 +26,7 @@ public class TodoV1 implements Todo {
     @Column
     private boolean completed;
 
+    @Override
     public void update(TodoPatchDto todoPatchDto) {
         this.todoOrder = todoPatchDto.getTodoOrder();
         this.completed = todoPatchDto.isCompleted();
