@@ -3,6 +3,7 @@ package tjddnr.ToDoAppdemo.Todo.domain;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import tjddnr.ToDoAppdemo.Todo.controller.dto.TodoPatchDto;
 
 import javax.persistence.*;
 
@@ -23,4 +24,10 @@ public class TodoV1 implements Todo {
 
     @Column
     private boolean completed;
+
+    public void update(TodoPatchDto todoPatchDto) {
+        this.todoOrder = todoPatchDto.getTodoOrder();
+        this.completed = todoPatchDto.isCompleted();
+        this.title = todoPatchDto.getTitle();
+    }
 }
