@@ -46,10 +46,8 @@ public class TodoService {
         Optional<TodoV1> optionalTodoV1 = todoRepository.findById(todoPatchDto.getId());
         TodoV1 findTodoV1 = optionalTodoV1.orElseThrow(() ->
                 new RuntimeException());
-        findTodoV1.setTodoOrder(todoPatchDto.getTodoOrder());
-        findTodoV1.setCompleted(todoPatchDto.isCompleted());
-        findTodoV1.setTitle(todoPatchDto.getTitle());
 
+        findTodoV1.update(todoPatchDto);
         return todoMapper.todoToTodoDto(todoRepository.save(findTodoV1));
     }
 
